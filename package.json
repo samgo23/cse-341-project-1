@@ -1,0 +1,26 @@
+{
+  "name": "cse-341-project-1",
+  "version": "1.0.0",
+  "description": "Project 1 for CSE 431",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samgo23/cse-341-project-1.git"
+  },
+  "author": "Sam G (gordsam18@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samgo23/cse-341-project-1/issues"
+  },
+  "homepage": "https://github.com/samgo23/cse-341-project-1#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
