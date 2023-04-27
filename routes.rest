@@ -7,3 +7,41 @@ GET http://localhost:3000/contacts/6442e9e0a5f5fb95e2f0e47c HTTP/1.1
 GET http://localhost:3000/contacts/6442ea85a5f5fb95e2f0e47d HTTP/1.1
 ###
 GET http://localhost:3000/contacts/6442eb0ca5f5fb95e2f0e47e HTTP/1.1
+###
+
+POST http://localhost:3000/contacts HTTP/1.1
+Content-Type: application/application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@email.com",
+    "favoriteColor": "blue",
+    "birthday": "01/02/2000"
+}
+
+###
+PUT http://localhost:3000/contacts/6442e9e0a5f5fb95e2f0e47c HTTP/1.1
+Content-Type: application/application/json
+
+{
+  "firstName": "Damien",
+  "lastName": "Foster",
+  "email": "dkun9000@gmail.com",
+  "favoriteColor": "Blue",
+  "birthday": "June 14 1999"
+}
+
+###
+DELETE http:localhost:3000/contacts/6449bb17c923e28d7b2f3dc0 HTTP/1.1
+
+###
+
+
+GET https://cse-341-project-1.onrender.com/contacts HTTP/1.1
+###
+GET https://cse-341-project-1.onrender.com/contacts/6442e9e0a5f5fb95e2f0e47c HTTP/1.1
+###
+GET https://cse-341-project-1.onrender.com/contacts/6442ea85a5f5fb95e2f0e47d HTTP/1.1
+###
+GET https://cse-341-project-1.onrender.com/contacts/6442eb0ca5f5fb95e2f0e47e HTTP/1.1
