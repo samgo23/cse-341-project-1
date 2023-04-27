@@ -26,9 +26,12 @@ const createContact = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday
   };
-  const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
+  const response = await mongodb
+  .getDb()
+  .db()
+  .collection('contacts')
+  .insertOne(contact);
   if (response.acknowledged) {
-    res.setHeader('Content-Type', 'application/json');
     res.status(200).json({ id: response.insertedId });
   } else {
     res.status(500).json({ error: 'Unable to create contact' });
@@ -53,13 +56,13 @@ const updateContact = async (req, res) => {
   if (response.modifiedCount > 0) {
     res.status(204).send();
   } else {
-    res.status(500).json(response.error || 'Some error occurred while updating the contact.');
+    res.status(500).json(response.error);
   }
 };
 
 const removeContact = async (req, res) => {
   const userId = new ObjectId(req.params.id);
-  const response = await mongodb.getDb().db().collection('contacts').remove({ _id: userId });
+  const response = await mongodb.getDb().db().collection('contacts').deleteOne({ _id: userId}, true);
   console.log(response);
   if (response.deletedCount > 0) {
     res.status(204).send();
