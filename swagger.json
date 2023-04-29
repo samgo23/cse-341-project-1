@@ -20,7 +20,7 @@
     },
     "/contacts/": {
       "get": {
-        "description": "",
+        "description": "Retrieve all contacts",
         "produces": [
           "application/json"
         ],
@@ -32,7 +32,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Create a new contact",
         "parameters": [
           {
             "name": "body",
@@ -41,19 +41,19 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "any"
+                  "example": "The first name of the contact"
                 },
                 "lastName": {
-                  "example": "any"
+                  "example": "The last name of the contact"
                 },
                 "email": {
-                  "example": "any"
+                  "example": "The email address of the contact"
                 },
                 "favoriteColor": {
-                  "example": "any"
+                  "example": "The favorite color of the contact"
                 },
                 "birthday": {
-                  "example": "any"
+                  "example": "The birthday of the contact in MM/DD/YY format"
                 }
               }
             }
@@ -71,7 +71,7 @@
     },
     "/contacts/{id}": {
       "get": {
-        "description": "",
+        "description": "Retrieve a single contact by ID",
         "produces": [
           "application/json"
         ],
@@ -90,7 +90,7 @@
         }
       },
       "put": {
-        "description": "",
+        "description": "Update an existing contact",
         "parameters": [
           {
             "name": "id",
@@ -105,19 +105,19 @@
               "type": "object",
               "properties": {
                 "firstName": {
-                  "example": "any"
+                  "example": "The first name of the contact"
                 },
                 "lastName": {
-                  "example": "any"
+                  "example": "The last name of the contact"
                 },
                 "email": {
-                  "example": "any"
+                  "example": "The email address of the contact"
                 },
                 "favoriteColor": {
-                  "example": "any"
+                  "example": "The favorite color of the contact"
                 },
                 "birthday": {
-                  "example": "any"
+                  "example": "The birthday of the contact in MM/DD/YY format"
                 }
               }
             }
@@ -133,7 +133,7 @@
         }
       },
       "delete": {
-        "description": "",
+        "description": "Delete an existing contact",
         "parameters": [
           {
             "name": "id",
