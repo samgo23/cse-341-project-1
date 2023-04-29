@@ -28,8 +28,8 @@ content-type: application/json
   "firstName": "Damien",
   "lastName": "Foster",
   "email": "dkun9000@gmail.com",
-  "favoriteColor": "Green",
-  "birthday": "June 14 1999"
+  "favoriteColor": "Blue",
+  "birthday": "July 14 1999"
 }
 
 ###
@@ -67,10 +67,10 @@ content-type: application/json
   "firstName": "Damien",
   "lastName": "Foster",
   "email": "dkun9000@gmail.com",
-  "favoriteColor": "Green",
+  "favoriteColor": "Blue",
   "birthday": "June 14 1999"
 }
 
 ###
 
-DELETE https://cse-341-project-1.onrender.com/contacts/6449caa9de9fc31911844386 HTTP/1.1
+DELETE https://cse-341-project-1.onrender.com/contacts/6449eff438fc3fae604a796b HTTP/1.1
