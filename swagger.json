@@ -13,7 +13,7 @@
   "paths": {
     "/api-docs": {
       "get": {
-        "description": "",
+        "description": "Intracting with the API",
         "parameters": [],
         "responses": {}
       }
@@ -24,7 +24,32 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "The first name of the contact"
+                },
+                "lastName": {
+                  "example": "The last name of the contact"
+                },
+                "email": {
+                  "example": "The email address of the contact"
+                },
+                "favoriteColor": {
+                  "example": "The favorite color of the contact"
+                },
+                "birthday": {
+                  "example": "The birthday of the contact in MM/DD/YY format"
+                }
+              }
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
